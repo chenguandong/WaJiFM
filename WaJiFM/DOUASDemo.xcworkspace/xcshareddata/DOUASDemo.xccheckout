@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0904BDDB-EC9C-457E-83AC-858E1CB0B372</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DOUASDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>86493A17-BB5C-4AED-A991-03D89A7CBF01</key>
+		<string>https://github.com/chenguandong/WajiFM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WaJiFM/DOUASDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>86493A17-BB5C-4AED-A991-03D89A7CBF01</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chenguandong/WajiFM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>86493A17-BB5C-4AED-A991-03D89A7CBF01</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>86493A17-BB5C-4AED-A991-03D89A7CBF01</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WajiFM</string>
+		</dict>
+	</array>
+</dict>
+</plist>
