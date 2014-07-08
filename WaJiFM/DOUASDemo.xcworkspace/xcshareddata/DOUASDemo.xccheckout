@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0904BDDB-EC9C-457E-83AC-858E1CB0B372</string>
+	<string>F135072D-807B-4556-856F-402CB5DD3D29</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DOUASDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>86493A17-BB5C-4AED-A991-03D89A7CBF01</key>
-		<string>https://github.com/chenguandong/WajiFM.git</string>
+		<key>0E491D81-F7E0-4F57-979E-86E01E1A3B02</key>
+		<string>https://github.com/chenguandong/WaJiFM.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WaJiFM/DOUASDemo.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>86493A17-BB5C-4AED-A991-03D89A7CBF01</key>
+		<key>0E491D81-F7E0-4F57-979E-86E01E1A3B02</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/chenguandong/WajiFM.git</string>
+	<string>https://github.com/chenguandong/WaJiFM.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>86493A17-BB5C-4AED-A991-03D89A7CBF01</string>
+	<string>0E491D81-F7E0-4F57-979E-86E01E1A3B02</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>86493A17-BB5C-4AED-A991-03D89A7CBF01</string>
+			<string>0E491D81-F7E0-4F57-979E-86E01E1A3B02</string>
 			<key>IDESourceControlWCCName</key>
-			<string>WajiFM</string>
+			<string>WaJiFM</string>
 		</dict>
 	</array>
 </dict>

@@ -3,6 +3,8 @@
  *  DOUAudioStreamer - A Core Audio based streaming audio player for iOS/Mac:
  *
  *      https://github.com/douban/DOUAudioStreamer
+        https://www.waji.com
+ 
  *
  *  Copyright 2013-2014 Douban Inc.  All rights reserved.
  *
