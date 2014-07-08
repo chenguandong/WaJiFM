@@ -124,7 +124,6 @@
 		DAC2E22D196BDCC800569B1B /* Icon-smail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */; };
 		DAC2E22F196BDCF800569B1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22E196BDCF800569B1B /* Icon.png */; };
 		DAC2E231196BDD1400569B1B /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E230196BDD1400569B1B /* Icon-smail.png */; };
-		DAC2E233196BE75D00569B1B /* READ.ME in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E232196BE75D00569B1B /* READ.ME */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -315,7 +314,6 @@
 		DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail@2x.png"; sourceTree = "<group>"; };
 		DAC2E22E196BDCF800569B1B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DAC2E230196BDD1400569B1B /* Icon-smail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail.png"; sourceTree = "<group>"; };
-		DAC2E232196BE75D00569B1B /* READ.ME */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = READ.ME; path = DOUASDemo/READ.ME; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,7 +533,6 @@
 		D4C38916171B9D87009D6124 = {
 			isa = PBXGroup;
 			children = (
-				DAC2E232196BE75D00569B1B /* READ.ME */,
 				D4C38928171B9D87009D6124 /* WaJiFM */,
 				D4C38921171B9D87009D6124 /* Frameworks */,
 				D4C38920171B9D87009D6124 /* Products */,
@@ -749,7 +746,6 @@
 				D4C38937171B9D87009D6124 /* Default@2x.png in Resources */,
 				18F978BF1942BF25006900E1 /* Localizable.strings in Resources */,
 				18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */,
-				DAC2E233196BE75D00569B1B /* READ.ME in Resources */,
 				18EDEF7D194991DD00DF1B34 /* play_ctrl_play_prs.png in Resources */,
 				18B21458193ECD8C00BD9CBE /* placeholder.png in Resources */,
 				188A075F194D7193005BC00F /* FavouriteTableViewController.xib in Resources */,
