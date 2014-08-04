@@ -160,12 +160,7 @@
         cell.albumSubTitle.text = bean.description;
         [cell.albumImgView setImageWithURL:[NSURL URLWithString:bean.image]
                        placeholderImage:[UIImage imageNamed:@"mplaceholder"]];
-        
-
-
-        
-
-   
+     
     }
   return cell;
 }

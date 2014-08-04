@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
@@ -47,30 +48,17 @@
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0B-W3-eY1">
-                        <rect key="frame" x="270" y="53" width="45" height="45"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="45" id="57o-KJ-ORh"/>
-                            <constraint firstAttribute="width" constant="45" id="gTh-t0-7BP"/>
-                        </constraints>
-                        <state key="normal" title="Button" image="download.png">
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="HUW-hY-Kkb" secondAttribute="trailing" constant="48" id="3Q0-qU-v2f"/>
                     <constraint firstAttribute="bottom" secondItem="FO6-1a-2Ok" secondAttribute="bottom" id="Fh2-NE-IKy"/>
                     <constraint firstAttribute="trailing" secondItem="dCZ-Bw-8D2" secondAttribute="trailing" constant="5" id="HmH-qG-lxY"/>
-                    <constraint firstAttribute="bottom" secondItem="O0B-W3-eY1" secondAttribute="bottom" constant="1" id="Hzt-YT-COF"/>
                     <constraint firstItem="FO6-1a-2Ok" firstAttribute="top" secondItem="HUW-hY-Kkb" secondAttribute="bottom" constant="8" symbolic="YES" id="IDC-0j-22I"/>
                     <constraint firstItem="GQe-fM-rdK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jlf-6W-zce"/>
                     <constraint firstItem="HUW-hY-Kkb" firstAttribute="leading" secondItem="GQe-fM-rdK" secondAttribute="trailing" constant="8" id="LiE-Uh-RLx"/>
                     <constraint firstItem="FO6-1a-2Ok" firstAttribute="leading" secondItem="GQe-fM-rdK" secondAttribute="trailing" constant="8" id="SmV-VC-JvD"/>
                     <constraint firstItem="GQe-fM-rdK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XRB-aV-Q4L"/>
                     <constraint firstAttribute="trailing" secondItem="FO6-1a-2Ok" secondAttribute="trailing" constant="48" id="c5G-lO-tyP"/>
-                    <constraint firstAttribute="trailing" secondItem="O0B-W3-eY1" secondAttribute="trailing" constant="5" id="f0G-kW-QIO"/>
                     <constraint firstAttribute="bottom" secondItem="GQe-fM-rdK" secondAttribute="bottom" constant="-1" id="oaC-Up-9gV"/>
                     <constraint firstItem="dCZ-Bw-8D2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rUM-CT-RQ2"/>
                 </constraints>
@@ -84,6 +72,5 @@
     </objects>
     <resources>
         <image name="RSS.png" width="72" height="72"/>
-        <image name="download.png" width="72" height="72"/>
     </resources>
 </document>

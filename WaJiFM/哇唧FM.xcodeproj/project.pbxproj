@@ -463,10 +463,10 @@
 				18CFB98D194AA0CB00ADC133 /* SettingTableViewCell.xib */,
 				18CFB993194AE65000ADC133 /* AlbumCellTableViewCell.h */,
 				18CFB994194AE65000ADC133 /* AlbumCellTableViewCell.m */,
+				18CFB995194AE65000ADC133 /* AlbumCellTableViewCell.xib */,
 				18CFB99A194AEEA700ADC133 /* MusicCell.h */,
 				18CFB99B194AEEA700ADC133 /* MusicCell.m */,
 				18CFB99C194AEEA700ADC133 /* MusicCell.xib */,
-				18CFB995194AE65000ADC133 /* AlbumCellTableViewCell.xib */,
 			);
 			name = cell;
 			sourceTree = "<group>";

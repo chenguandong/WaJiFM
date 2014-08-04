@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-3R-CoS">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YEz-3R-CoS">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
@@ -53,8 +53,8 @@
                     <rect key="frame" x="8" y="20" width="271" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </slider>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahR-YO-I3d">
-                    <rect key="frame" x="42" y="291" width="242" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahR-YO-I3d">
+                    <rect key="frame" x="42" y="291" width="42" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -74,7 +74,7 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkJ-4x-dZe">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkJ-4x-dZe">
                     <rect key="frame" x="0.0" y="470" width="320" height="98"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
@@ -105,6 +105,7 @@
                         </slider>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.25490197539329529" green="0.91764712333679199" blue="0.51764708757400513" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="98" id="Ebd-r5-L7n"/>
                     </constraints>
@@ -117,17 +118,21 @@
                 <constraint firstItem="hkJ-4x-dZe" firstAttribute="top" secondItem="2hR-Qf-gXM" secondAttribute="bottom" constant="77" id="EsS-ku-9Ao"/>
                 <constraint firstAttribute="trailing" secondItem="mTu-vW-HJe" secondAttribute="trailing" constant="43" id="Hps-e0-jY6"/>
                 <constraint firstItem="mTu-vW-HJe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="JEx-E3-qAs"/>
+                <constraint firstItem="YEz-3R-CoS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LT0-0H-EdS"/>
                 <constraint firstAttribute="bottom" secondItem="hkJ-4x-dZe" secondAttribute="bottom" id="LdM-lu-vYK"/>
                 <constraint firstAttribute="trailing" secondItem="hkJ-4x-dZe" secondAttribute="trailing" id="Qe6-AJ-bMf"/>
+                <constraint firstAttribute="trailing" secondItem="YEz-3R-CoS" secondAttribute="trailing" id="Ryn-Di-rPo"/>
                 <constraint firstAttribute="trailing" secondItem="Efd-Ya-qLb" secondAttribute="trailing" constant="20" symbolic="YES" id="ZP4-VB-ety"/>
                 <constraint firstItem="hkJ-4x-dZe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bAp-ZB-0ER"/>
                 <constraint firstItem="ahR-YO-I3d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="crW-cI-HBa"/>
                 <constraint firstItem="Efd-Ya-qLb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="43" id="ebb-l4-HB5"/>
                 <constraint firstAttribute="bottom" secondItem="2Sk-9B-XHy" secondAttribute="bottom" constant="89" id="fuL-B6-hg9"/>
                 <constraint firstItem="I1k-LB-4yx" firstAttribute="bottom" secondItem="2Sk-9B-XHy" secondAttribute="bottom" id="gx4-Iu-aVF"/>
+                <constraint firstAttribute="bottom" secondItem="YEz-3R-CoS" secondAttribute="bottom" id="hdM-kC-jEX"/>
                 <constraint firstItem="Efd-Ya-qLb" firstAttribute="trailing" secondItem="I1k-LB-4yx" secondAttribute="trailing" constant="-20" id="hwT-C4-5RR"/>
                 <constraint firstAttribute="bottom" secondItem="hkJ-4x-dZe" secondAttribute="bottom" id="iPg-p0-HVy"/>
                 <constraint firstItem="2Sk-9B-XHy" firstAttribute="top" secondItem="I1k-LB-4yx" secondAttribute="top" id="kE1-hD-oD4"/>
+                <constraint firstItem="YEz-3R-CoS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nx2-Ry-kUe"/>
                 <constraint firstAttribute="trailing" secondItem="2Sk-9B-XHy" secondAttribute="trailing" constant="48" id="psI-co-Dg2"/>
                 <constraint firstAttribute="trailing" secondItem="hkJ-4x-dZe" secondAttribute="trailing" id="rss-OM-LK0"/>
                 <constraint firstItem="2hR-Qf-gXM" firstAttribute="top" secondItem="Efd-Ya-qLb" secondAttribute="bottom" constant="18" id="tTL-wp-9VS"/>

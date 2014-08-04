@@ -55,6 +55,11 @@
     bean2.setttingImg = @"paly_btn_next.png";
     bean2.settingName = @"收藏";
     [_arr addObject:bean2];
+    
+    SettingBean *bean3 = [SettingBean new];
+    bean3.setttingImg = @"paly_btn_next.png";
+    bean3.settingName = @"历史记录";
+    [_arr addObject:bean3];
 }
 
 -(void)junmpDownload{

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
@@ -22,10 +23,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-AR-273">
-                    <rect key="frame" x="188" y="12" width="45" height="45"/>
+                    <rect key="frame" x="196" y="21" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="45" id="4vN-W2-ei9"/>
+                        <constraint firstAttribute="width" constant="30" id="4vN-W2-ei9"/>
                     </constraints>
                     <state key="normal" image="play_btn_prev.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,7 +49,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfM-wB-jra">
-                    <rect key="frame" x="275" y="12" width="45" height="45"/>
+                    <rect key="frame" x="283" y="20" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="play_btn_next.png"/>
                     <connections>
@@ -81,37 +82,38 @@
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ajx-ju-spO">
                     <rect key="frame" x="0.0" y="65" width="320" height="2"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="tintColor" red="0.9450981021" green="0.13725490870000001" blue="0.03529411927" alpha="1" colorSpace="deviceRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="LOU-hW-oSU"/>
                     </constraints>
                 </progressView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Bbi-Bl-yeC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="0gk-01-1a3"/>
-                <constraint firstItem="IOX-Jj-ew7" firstAttribute="top" secondItem="SfM-wB-jra" secondAttribute="top" id="5uw-fK-410"/>
-                <constraint firstItem="yxz-AR-273" firstAttribute="top" secondItem="IOX-Jj-ew7" secondAttribute="top" id="6BN-lL-b2e"/>
-                <constraint firstItem="IOX-Jj-ew7" firstAttribute="leading" secondItem="yxz-AR-273" secondAttribute="trailing" id="Ct4-p6-bbQ"/>
+                <constraint firstItem="IOX-Jj-ew7" firstAttribute="top" secondItem="SfM-wB-jra" secondAttribute="top" constant="-8" id="5uw-fK-410"/>
+                <constraint firstItem="yxz-AR-273" firstAttribute="top" secondItem="IOX-Jj-ew7" secondAttribute="top" constant="9" id="6BN-lL-b2e"/>
+                <constraint firstItem="IOX-Jj-ew7" firstAttribute="leading" secondItem="yxz-AR-273" secondAttribute="trailing" constant="7" id="Ct4-p6-bbQ"/>
                 <constraint firstAttribute="trailing" secondItem="IOX-Jj-ew7" secondAttribute="trailing" constant="42" id="Ees-xK-XqQ"/>
                 <constraint firstItem="Bbi-Bl-yeC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="Jlg-nh-ZUF"/>
                 <constraint firstItem="ajx-ju-spO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MJq-5k-cDl"/>
                 <constraint firstItem="a2E-hC-84g" firstAttribute="leading" secondItem="Bbi-Bl-yeC" secondAttribute="trailing" constant="8" symbolic="YES" id="PMK-1N-uTY"/>
-                <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="SfM-wB-jra" secondAttribute="bottom" constant="8" symbolic="YES" id="S4l-on-gom"/>
+                <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="SfM-wB-jra" secondAttribute="bottom" constant="15" id="S4l-on-gom"/>
                 <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="Bbi-Bl-yeC" secondAttribute="bottom" constant="6" id="VTf-MM-06v"/>
-                <constraint firstItem="yxz-AR-273" firstAttribute="leading" secondItem="pGe-aY-kEE" secondAttribute="trailing" id="XFY-3G-hbZ"/>
-                <constraint firstItem="yxz-AR-273" firstAttribute="leading" secondItem="a2E-hC-84g" secondAttribute="trailing" id="Xkm-sI-ywW"/>
+                <constraint firstItem="yxz-AR-273" firstAttribute="leading" secondItem="pGe-aY-kEE" secondAttribute="trailing" constant="8" id="XFY-3G-hbZ"/>
+                <constraint firstItem="yxz-AR-273" firstAttribute="leading" secondItem="a2E-hC-84g" secondAttribute="trailing" constant="8" id="Xkm-sI-ywW"/>
                 <constraint firstItem="pGe-aY-kEE" firstAttribute="leading" secondItem="Bbi-Bl-yeC" secondAttribute="trailing" constant="8" id="gGf-yt-i7Z"/>
                 <constraint firstAttribute="bottom" secondItem="ajx-ju-spO" secondAttribute="bottom" constant="-1" id="hHj-go-7ek"/>
                 <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="IOX-Jj-ew7" secondAttribute="bottom" constant="8" symbolic="YES" id="jOd-os-d6L"/>
                 <constraint firstItem="pGe-aY-kEE" firstAttribute="top" secondItem="a2E-hC-84g" secondAttribute="bottom" constant="-5" id="jtj-NS-tQG"/>
-                <constraint firstItem="SfM-wB-jra" firstAttribute="trailing" secondItem="ajx-ju-spO" secondAttribute="trailing" id="jxE-6k-kHO"/>
-                <constraint firstItem="SfM-wB-jra" firstAttribute="leading" secondItem="yxz-AR-273" secondAttribute="trailing" constant="42" id="o6d-Vz-I5n"/>
+                <constraint firstItem="SfM-wB-jra" firstAttribute="trailing" secondItem="ajx-ju-spO" secondAttribute="trailing" constant="-7" id="jxE-6k-kHO"/>
+                <constraint firstItem="SfM-wB-jra" firstAttribute="leading" secondItem="yxz-AR-273" secondAttribute="trailing" constant="57" id="o6d-Vz-I5n"/>
                 <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="pGe-aY-kEE" secondAttribute="bottom" constant="6" id="oEC-Px-Sdp"/>
                 <constraint firstItem="a2E-hC-84g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="rdH-G3-BKf"/>
-                <constraint firstItem="yxz-AR-273" firstAttribute="centerY" secondItem="Bbi-Bl-yeC" secondAttribute="centerY" id="rhe-0O-sUm"/>
-                <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="yxz-AR-273" secondAttribute="bottom" constant="8" symbolic="YES" id="t4b-9d-MMl"/>
-                <constraint firstAttribute="trailing" secondItem="SfM-wB-jra" secondAttribute="trailing" id="uDt-0v-5EQ"/>
+                <constraint firstItem="yxz-AR-273" firstAttribute="centerY" secondItem="Bbi-Bl-yeC" secondAttribute="centerY" constant="2" id="rhe-0O-sUm"/>
+                <constraint firstItem="ajx-ju-spO" firstAttribute="top" secondItem="yxz-AR-273" secondAttribute="bottom" constant="14" id="t4b-9d-MMl"/>
+                <constraint firstAttribute="trailing" secondItem="SfM-wB-jra" secondAttribute="trailing" constant="7" id="uDt-0v-5EQ"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
