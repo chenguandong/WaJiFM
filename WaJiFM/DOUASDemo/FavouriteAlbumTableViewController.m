@@ -38,7 +38,7 @@
 -(void)startQueryData{
     
     
-    [SVProgressHUD show];
+     [SVProgressHUD showWithStatus:@"数据加载中..."];
     
     [SqlTools getFMdatabase:[SqlTools getFavouriteAlbumDBSQL] :[SqlTools getAlbumFavouriteDBPath]];
     

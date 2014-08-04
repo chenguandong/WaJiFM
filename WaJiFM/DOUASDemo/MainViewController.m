@@ -32,7 +32,7 @@
 
 - (void)viewDidLoad
 {
-  [self setTitle:@"频道列表 ♫"];
+    [self setTitle:@"频道列表 ♫"];
     
 
     self.tableView.delegate = self;
@@ -97,13 +97,11 @@
 
     
     SettingMenuViewController *settingMenuColl= [SettingMenuViewController new];
-    //UINavigationController *setNav = [[UINavigationController alloc]initWithRootViewController:settingMenuColl];
+
     
     [self.navigationController pushViewController:settingMenuColl animated:YES];
     
-//    [self presentViewController:setNav animated:YES completion:^{
-//        
-//    }];
+
 }
 
 

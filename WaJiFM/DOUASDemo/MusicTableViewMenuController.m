@@ -53,9 +53,12 @@
     
 }
 
--(void)getMusicData{
 
-    [SVProgressHUD showErrorWithStatus:@"数据加载中..."];
+
+///第一次加载数据  右边栏
+-(void)getMusicData{
+    
+    
     [[HttpTools getAFHTTPRequestOperationManager]POST:MUSIC_HTTP_PATH parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -74,6 +77,17 @@
        
         
         [self.tableView reloadData];
+        
+        
+        //通知主页更新
+        
+        if (nil!=_menuArrayData) {
+            NSArray *arr =[_menuArrayData[0] subCategory];
+            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"MENU" object:arr];
+        }
+        
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"##############%@",error);
     }];

@@ -37,7 +37,7 @@
 -(void)startQueryData{
     
     
-    [SVProgressHUD show];
+     [SVProgressHUD showWithStatus:@"数据加载中..."];
     
     NSLog(@"======%@",_querySql);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^{

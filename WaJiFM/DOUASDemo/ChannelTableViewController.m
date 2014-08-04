@@ -112,7 +112,7 @@
 
 -(void)loadDate{
 
-    [SVProgressHUD show];
+    [SVProgressHUD showWithStatus:@"数据加载中..."];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^{
         // time-consuming task
         NSDictionary *dic = [XMLTools getBrodCastXML:_albumInfo.link];

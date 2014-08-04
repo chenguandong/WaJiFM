@@ -53,7 +53,7 @@ static DownLoadedViewController *sharedRootController = nil;
 -(void)startQueryData{
     
 
-    [SVProgressHUD show];
+    [SVProgressHUD showWithStatus:@"数据加载中..."];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^{
         // time-consuming task
         _allDownLoadData = [SqlTools queryData:@"select * from download where download_type =3 "];
