@@ -111,7 +111,7 @@
 
 {
     NSLog(@"**************");
-    PlayerViewController *playColl =[PlayerViewController sharedController];
+    PlayerViewController *playColl =[[PlayerViewController sharedController]init];
      playColl.currentTrackIndex = (NSUInteger)-1;
     [self.navigationController pushViewController:playColl animated:YES];
 

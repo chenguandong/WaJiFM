@@ -124,6 +124,7 @@
 		DAC2E22D196BDCC800569B1B /* Icon-smail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */; };
 		DAC2E22F196BDCF800569B1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22E196BDCF800569B1B /* Icon.png */; };
 		DAC2E231196BDD1400569B1B /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E230196BDD1400569B1B /* Icon-smail.png */; };
+		DAC2E235196BEA1D00569B1B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -314,6 +315,7 @@
 		DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail@2x.png"; sourceTree = "<group>"; };
 		DAC2E22E196BDCF800569B1B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DAC2E230196BDD1400569B1B /* Icon-smail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail.png"; sourceTree = "<group>"; };
+		DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +594,7 @@
 				D4F5B29218A5F3030063865C /* MainViewController.m */,
 				D4F5B29418A5F6B90063865C /* PlayerViewController.h */,
 				D4F5B29518A5F6B90063865C /* PlayerViewController.m */,
+				DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */,
 				D4C38929171B9D87009D6124 /* Supporting Files */,
 			);
 			name = WaJiFM;
@@ -748,6 +751,7 @@
 				18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */,
 				18EDEF7D194991DD00DF1B34 /* play_ctrl_play_prs.png in Resources */,
 				18B21458193ECD8C00BD9CBE /* placeholder.png in Resources */,
+				DAC2E235196BEA1D00569B1B /* PlayerViewController.xib in Resources */,
 				188A075F194D7193005BC00F /* FavouriteTableViewController.xib in Resources */,
 				18EDEF831949929B00DF1B34 /* play_btn_next_prs.png in Resources */,
 				188A075A194D61CC005BC00F /* like_enabled.png in Resources */,

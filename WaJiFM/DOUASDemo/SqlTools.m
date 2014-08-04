@@ -236,7 +236,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
     if ([db open]) {
         
         NSString * sql = @"insert into favourite values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ";
-        
+
          res = [db executeUpdate:sql,
                     nil,
                     xmlBrodCastItem.title, xmlBrodCastItem.author,xmlBrodCastItem.subtitle,xmlBrodCastItem.summary,xmlBrodCastItem.image,xmlBrodCastItem.guid,xmlBrodCastItem.pubDate,xmlBrodCastItem.duration,xmlBrodCastItem.keywords,

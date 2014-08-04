@@ -41,4 +41,19 @@
  暂停播放
  */
 - (void)_actionPlayPause:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *audioImgView;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonPlayPause;
+@property (weak, nonatomic) IBOutlet UIButton *buttonPlayPrevious;
+@property (weak, nonatomic) IBOutlet UIButton *buttonNext;
+
+@property (weak, nonatomic) IBOutlet UISlider *progressSlider;
+@property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UILabel *miscLabel;
+
 @end
