@@ -21,8 +21,19 @@
     insert favourite db data
  */
 +(BOOL)insertFavouriteDate:(XMLBrodCastItem *)xmlBrodCastItem;
+
+/*!
+ *  插入数据到历史记录
+ *
+ *  @param xmlBrodCastItem 数据Bean
+ *
+ *  @return 是否插入成功
+ */
++(BOOL)insertHistoryDate:(XMLBrodCastItem *)xmlBrodCastItem;
+
+
 /**
- 
+
     查询favourite.db 的数据  用户收藏
  */
 +(NSArray*)queryFavouriteDB:(NSString*)sql;
@@ -37,10 +48,19 @@
  */
 +(NSString*)getFavouriteDBSQL;
 
+/*!
+ *  create histoty db sql
+ *
+ *  @return create histoty db sql
+ */
++(NSString*)getHistoryDBSQL;
+
 
 +(FMDatabase*)getDownloadDBPath;
 
 +(FMDatabase*)getFavouriteDBPath;
+
++(FMDatabase*)getHistoryDBPath;
 
 /**
     检查数据是否已经收藏

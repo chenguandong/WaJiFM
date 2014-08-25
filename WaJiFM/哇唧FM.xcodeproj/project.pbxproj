@@ -99,6 +99,8 @@
 		D4F5B29618A5F6B90063865C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F5B29518A5F6B90063865C /* PlayerViewController.m */; };
 		D4F5B29818A605A70063865C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F5B29718A605A70063865C /* AVFoundation.framework */; };
 		D4F5B29A18A605AB0063865C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F5B29918A605AB0063865C /* MediaPlayer.framework */; };
+		DA8CB0DE19AB424300968D7A /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */; };
+		DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */; };
 		DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E165196BCEBD00569B1B /* mplaceholder.png */; };
 		DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */; };
 		DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */; };
@@ -265,6 +267,9 @@
 		D4F5B29518A5F6B90063865C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		D4F5B29718A605A70063865C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D4F5B29918A605AB0063865C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewController.xib; sourceTree = "<group>"; };
 		DAC2E165196BCEBD00569B1B /* mplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mplaceholder.png; sourceTree = "<group>"; };
 		DAC2E1ED196BDBBA00569B1B /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		DAC2E1EE196BDBBA00569B1B /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
@@ -345,6 +350,7 @@
 		181B9740193D80AB00CEDE91 /* coll */ = {
 			isa = PBXGroup;
 			children = (
+				DA94C7F019AB40E100B2FDB3 /* historyColl */,
 				181B9741193D80E100CEDE91 /* MusicTableViewMenuController.h */,
 				181B9742193D80E100CEDE91 /* MusicTableViewMenuController.m */,
 				181B9743193D80E100CEDE91 /* MusicTableViewMenuController.xib */,
@@ -614,6 +620,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA94C7F019AB40E100B2FDB3 /* historyColl */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */,
+				DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */,
+				DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */,
+			);
+			name = historyColl;
+			sourceTree = "<group>";
+		};
 		DAC2E1EC196BDBA200569B1B /* BD_FM */ = {
 			isa = PBXGroup;
 			children = (
@@ -754,6 +770,7 @@
 				DAC2E231196BDD1400569B1B /* Icon-smail.png in Resources */,
 				18CFB98A194A9A8600ADC133 /* SettingMenuViewController.xib in Resources */,
 				18EDEF7E194991DD00DF1B34 /* play_ctrl_play.png in Resources */,
+				DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */,
 				18EDEF841949929B00DF1B34 /* play_btn_next.png in Resources */,
 				181B9745193D80E100CEDE91 /* MusicTableViewMenuController.xib in Resources */,
 				18394C7B19471B320091A3B3 /* DownLoadedViewController.xib in Resources */,
@@ -826,6 +843,7 @@
 				DAC2E21A196BDBBA00569B1B /* DOUAudioEventLoop.m in Sources */,
 				181B974D193D8FC200CEDE91 /* IISideController.m in Sources */,
 				DAC2E21F196BDBBA00569B1B /* DOUAudioPlaybackItem.m in Sources */,
+				DA8CB0DE19AB424300968D7A /* HistoryTableViewController.m in Sources */,
 				18F978BE1942BF25006900E1 /* UIDevice-Hardware.m in Sources */,
 				DAC2E21B196BDBBA00569B1B /* DOUAudioFilePreprocessor.m in Sources */,
 				188A0757194D3832005BC00F /* FavouriteViewController.m in Sources */,

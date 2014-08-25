@@ -19,7 +19,8 @@
 #import "DOUAudioStreamer.h"
 @interface PlayerViewController : UIViewController
 @property NSUInteger currentTrackIndex;
-@property (nonatomic, copy) NSArray *tracks;
+@property (nonatomic, strong) NSArray *tracks;
+@property(nonatomic,strong)NSArray *musicDetail;
 @property(nonatomic,strong)MusicPlayViewController *musicColl;
 @property(nonatomic,strong)DOUAudioStreamer *streamer;
 

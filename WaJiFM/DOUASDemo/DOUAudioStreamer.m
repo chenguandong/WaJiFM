@@ -18,7 +18,6 @@
 #import "DOUAudioStreamer_Private.h"
 #import "DOUAudioFileProvider.h"
 #import "DOUAudioEventLoop.h"
-
 NSString *const kDOUAudioStreamerErrorDomain = @"com.douban.audio-streamer.error-domain";
 
 @interface DOUAudioStreamer () {
@@ -203,7 +202,13 @@ NSString *const kDOUAudioStreamerErrorDomain = @"com.douban.audio-streamer.error
 
     [[DOUAudioEventLoop sharedEventLoop] play];
   }
+    
+    
 }
+
+
+
+
 
 - (void)pause
 {

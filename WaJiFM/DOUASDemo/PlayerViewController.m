@@ -23,6 +23,7 @@
 #import "MusicPlayViewController.h"
 #import "SDWebImage/UIButton+WebCache.h"
 #import "MarqueeLabel.h"
+#import "SqlTools.h"
 static void *kStatusKVOKey = &kStatusKVOKey;
 static void *kDurationKVOKey = &kDurationKVOKey;
 static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
@@ -121,6 +122,8 @@ static PlayerViewController *sharedRootController = nil;
   }
 }
 
+
+//开始播放 每次重新开始播放   历史记录应该放在这个位置
 - (void)_resetStreamer
 {
   [self _cancelStreamer];
@@ -142,6 +145,8 @@ static PlayerViewController *sharedRootController = nil;
         
         [_streamer play];
         
+        //插入历史记录
+        [self insertHistory];
 
         _musicColl.musicTitle.text =track.title;
         _musicColl.musicSubtitle.text = track.subTitle;
@@ -152,6 +157,31 @@ static PlayerViewController *sharedRootController = nil;
         [self _setupHintForStreamer];
     }
 }
+
+
+
+//插入历史记录到数据库
+-(void)insertHistory{
+    __block BOOL inertState;
+    [SqlTools getFMdatabase:[SqlTools getHistoryDBSQL] :[SqlTools getHistoryDBPath]];
+
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^{
+        // time-consuming task
+        inertState =  [SqlTools insertHistoryDate:_musicDetail[_currentTrackIndex]];
+        
+        dispatch_async(dispatch_get_main_queue(),^{
+            if (inertState) {
+                NSLog(@"插入历史记录成功.....");
+            }else{
+                NSLog(@"插入历史记录失败....");
+            }
+            
+        });
+    });
+}
+
+
 
 - (void)_setupHintForStreamer
 {

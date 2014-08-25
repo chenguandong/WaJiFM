@@ -333,6 +333,8 @@
     
     appDelegate.playerColl.currentTrackIndex = (NSUInteger)indexPath.row;
     
+    appDelegate.playerColl.musicDetail =_channelArray;
+    
     [[self navigationController] pushViewController:appDelegate.playerColl
                                            animated:YES];
     

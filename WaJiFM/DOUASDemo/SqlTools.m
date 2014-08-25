@@ -57,6 +57,15 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
 }
 
 /**
+ history db path
+ */
++(FMDatabase*)getHistoryDBPath{
+    NSString *_docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *_dbPath = [_docPath stringByAppendingPathComponent:@"history.db"];
+    return  [FMDatabase databaseWithPath:_dbPath];
+}
+
+/**
  album db path
  */
 +(FMDatabase*)getAlbumFavouriteDBPath{
@@ -90,6 +99,12 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
     return @"CREATE TABLE IF NOT EXISTS favourite (id INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , title text,author text,subtitle text,summary text,image text,guid text,pubDate text,duration text,keywords text,download_type integer,download_file_name text,album text,file_type integer,isfavourite integer)";
 }
 
+
++(NSString*)getHistoryDBSQL{
+    
+    
+    return @"CREATE TABLE IF NOT EXISTS history (id INTEGER PRIMARY KEY AUTOINCREMENT  NOT NULL , title text,author text,subtitle text,summary text,image text,guid text,pubDate text,duration text,keywords text,download_type integer,download_file_name text,album text,file_type integer,last_time integer)";
+}
 
 
 
@@ -229,6 +244,8 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
     return  _dbPath;
 }
 
+
+#pragma mark  插入数据到收藏
 +(BOOL)insertFavouriteDate:(XMLBrodCastItem *)xmlBrodCastItem{
     FMDatabase * db = [self getFavouriteDBPath];
     
@@ -259,6 +276,47 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
 
     return res;
 }
+
+
+
+
+
+
+
+#pragma mark  插入数据到收历史记录
++(BOOL)insertHistoryDate:(XMLBrodCastItem *)xmlBrodCastItem{
+    FMDatabase * db = [self getFavouriteDBPath];
+    
+    BOOL res = NO;
+    if ([db open]) {
+        
+        NSString * sql = @"insert into history values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ";
+        
+        res = [db executeUpdate:sql,
+               nil,
+               xmlBrodCastItem.title, xmlBrodCastItem.author,xmlBrodCastItem.subtitle,xmlBrodCastItem.summary,xmlBrodCastItem.image,xmlBrodCastItem.guid,xmlBrodCastItem.pubDate,xmlBrodCastItem.duration,xmlBrodCastItem.keywords,
+               [NSString stringWithFormat:@"%d",xmlBrodCastItem.download_type],
+               xmlBrodCastItem.download_file_name,
+               xmlBrodCastItem.album,
+               [NSString stringWithFormat:@"%d",xmlBrodCastItem.file_type],
+               [NSString stringWithFormat:@"%d",0]
+               ];
+        
+        if (!res) {
+            NSLog(@"error to insert data");
+            
+        } else {
+            NSLog(@"succ to insert data");
+            
+        }
+        [db close];
+    }
+    
+    return res;
+}
+
+
+
 
 +(BOOL)insertDownloadDate:(XMLBrodCastItem *)xmlBrodCastItem{
 
