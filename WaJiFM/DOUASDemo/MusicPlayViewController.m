@@ -76,7 +76,7 @@ static MusicPlayViewController *sharedRootController = nil;
     _streamer = _doubanPlayer.streamer;
     
  
-    //设置progrebar 样式 111222
+    //设置progrebar 样式 111222333
 
 //    [_musicProgress setThumbImage:img forState:UIControlStateNormal];
 //     [_musicProgress setThumbImage:img forState:UIControlStateHighlighted];
