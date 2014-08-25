@@ -56,6 +56,8 @@ static MusicPlayViewController *sharedRootController = nil;
     [super viewDidLoad];
     
 
+    
+    //设置音乐标题和字体样式
     _musicSubtitle.textColor = [UIColor whiteColor];
     _musicTitle.textColor = [UIColor whiteColor];
     _musicSubtitle.font  =[UIFont systemFontOfSize:12];
@@ -76,7 +78,7 @@ static MusicPlayViewController *sharedRootController = nil;
     _streamer = _doubanPlayer.streamer;
     
  
-    //设置progrebar 样式 111222333
+    //设置progrebar 样式
 
 //    [_musicProgress setThumbImage:img forState:UIControlStateNormal];
 //     [_musicProgress setThumbImage:img forState:UIControlStateHighlighted];
