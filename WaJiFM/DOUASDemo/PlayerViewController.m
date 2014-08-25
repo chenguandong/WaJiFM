@@ -22,6 +22,7 @@
 #import "DownLoadTools.h"
 #import "MusicPlayViewController.h"
 #import "SDWebImage/UIButton+WebCache.h"
+#import "MarqueeLabel.h"
 static void *kStatusKVOKey = &kStatusKVOKey;
 static void *kDurationKVOKey = &kDurationKVOKey;
 static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;

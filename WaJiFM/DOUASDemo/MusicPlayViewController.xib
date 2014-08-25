@@ -9,8 +9,8 @@
             <connections>
                 <outlet property="musicImg" destination="Bbi-Bl-yeC" id="3Wj-JW-yVV"/>
                 <outlet property="musicProgress" destination="ajx-ju-spO" id="9Ks-Fk-FJJ"/>
-                <outlet property="musicSubtitle" destination="pGe-aY-kEE" id="ack-ZJ-Vsb"/>
-                <outlet property="musicTitle" destination="a2E-hC-84g" id="i3M-9Y-ulY"/>
+                <outlet property="musicSubtitle" destination="pGe-aY-kEE" id="1wb-Lw-zVL"/>
+                <outlet property="musicTitle" destination="a2E-hC-84g" id="dlQ-cn-5Qs"/>
                 <outlet property="nextButton" destination="SfM-wB-jra" id="n8u-46-qSx"/>
                 <outlet property="playButton" destination="IOX-Jj-ew7" id="1xg-m6-oDT"/>
                 <outlet property="previousButton" destination="yxz-AR-273" id="c3e-2G-tfB"/>
@@ -63,21 +63,23 @@
                         <constraint firstAttribute="width" constant="50" id="56E-1f-bzW"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-hC-84g">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-hC-84g" customClass="MarqueeLabel">
                     <rect key="frame" x="62" y="9" width="126" height="27"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="27" id="vLy-06-afD"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGe-aY-kEE">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGe-aY-kEE" customClass="MarqueeLabel">
                     <rect key="frame" x="62" y="31" width="126" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="highlightedColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </label>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ajx-ju-spO">
                     <rect key="frame" x="0.0" y="65" width="320" height="2"/>

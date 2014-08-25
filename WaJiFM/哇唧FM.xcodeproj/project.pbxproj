@@ -24,7 +24,6 @@
 		183984F7193720CB00B43B24 /* XMLBrodCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984F6193720CB00B43B24 /* XMLBrodCast.m */; };
 		183984FA193721EA00B43B24 /* XMLBrodCastItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984F9193721EA00B43B24 /* XMLBrodCastItem.m */; };
 		183984FE193723B300B43B24 /* XMLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984FD193723B300B43B24 /* XMLTools.m */; };
-		184F8C36194ECC68009473B6 /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F8C35194ECC68009473B6 /* MarqueeLabel.m */; };
 		1856B2791946A1BA0013CDB2 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856B2771946A1BA0013CDB2 /* DownLoadViewController.m */; };
 		1856B27A1946A1BA0013CDB2 /* DownLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856B2781946A1BA0013CDB2 /* DownLoadViewController.xib */; };
 		1856B2831946F6090013CDB2 /* StringTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856B2821946F6090013CDB2 /* StringTools.m */; };
@@ -159,8 +158,6 @@
 		183984F9193721EA00B43B24 /* XMLBrodCastItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLBrodCastItem.m; sourceTree = "<group>"; };
 		183984FC193723B300B43B24 /* XMLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTools.h; sourceTree = "<group>"; };
 		183984FD193723B300B43B24 /* XMLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLTools.m; sourceTree = "<group>"; };
-		184F8C34194ECC68009473B6 /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
-		184F8C35194ECC68009473B6 /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
 		1856B2761946A1BA0013CDB2 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
 		1856B2771946A1BA0013CDB2 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
 		1856B2781946A1BA0013CDB2 /* DownLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownLoadViewController.xib; sourceTree = "<group>"; };
@@ -396,8 +393,6 @@
 			isa = PBXGroup;
 			children = (
 				DAC2E1EC196BDBA200569B1B /* BD_FM */,
-				184F8C34194ECC68009473B6 /* MarqueeLabel.h */,
-				184F8C35194ECC68009473B6 /* MarqueeLabel.m */,
 				18F978AE1942BF25006900E1 /* TCBlobDownload */,
 				181B9746193D8FC200CEDE91 /* ViewDeck */,
 				183984EC1937181500B43B24 /* GDataXML */,
@@ -417,6 +412,8 @@
 		183984F41937207F00B43B24 /* bean */ = {
 			isa = PBXGroup;
 			children = (
+				D4F5B28B18A5F0C70063865C /* Track.h */,
+				D4F5B28C18A5F0C70063865C /* Track.m */,
 				183984F5193720CB00B43B24 /* XMLBrodCast.h */,
 				183984F6193720CB00B43B24 /* XMLBrodCast.m */,
 				183984F8193721EA00B43B24 /* XMLBrodCastItem.h */,
@@ -585,8 +582,6 @@
 				D4C38931171B9D87009D6124 /* AppDelegate.h */,
 				D4C38932171B9D87009D6124 /* AppDelegate.m */,
 				181B9740193D80AB00CEDE91 /* coll */,
-				D4F5B28B18A5F0C70063865C /* Track.h */,
-				D4F5B28C18A5F0C70063865C /* Track.m */,
 				D4F5B28E18A5F1B70063865C /* Track+Provider.h */,
 				D4F5B28F18A5F1B70063865C /* Track+Provider.m */,
 				18C7014119485D1A00A14D4F /* MainViewController.xib */,
@@ -807,7 +802,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184F8C36194ECC68009473B6 /* MarqueeLabel.m in Sources */,
 				188A075E194D7193005BC00F /* FavouriteTableViewController.m in Sources */,
 				18394C7A19471B320091A3B3 /* DownLoadedViewController.m in Sources */,
 				181B9744193D80E100CEDE91 /* MusicTableViewMenuController.m in Sources */,

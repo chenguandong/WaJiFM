@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class MarqueeLabel;
 @class PlayerViewController;
 @class DOUAudioStreamer;
 @interface MusicPlayViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *musicImg;
 
 @property (weak, nonatomic) IBOutlet UIProgressView *musicProgress;
-@property (weak, nonatomic) IBOutlet UILabel *musicTitle;
-@property (weak, nonatomic) IBOutlet UILabel *musicSubtitle;
+@property (weak, nonatomic) IBOutlet MarqueeLabel *musicTitle;
+@property (weak, nonatomic) IBOutlet MarqueeLabel *musicSubtitle;
 @property (weak, nonatomic) IBOutlet UIButton *previousButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;

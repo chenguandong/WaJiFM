@@ -9,6 +9,7 @@
 #import "MusicPlayViewController.h"
 #import "PlayerViewController.h"
 
+#import "MarqueeLabel.h"
 @interface MusicPlayViewController ()
 
 @end
@@ -53,6 +54,23 @@ static MusicPlayViewController *sharedRootController = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
+    _musicSubtitle.textColor = [UIColor whiteColor];
+    _musicTitle.textColor = [UIColor whiteColor];
+    _musicSubtitle.font  =[UIFont systemFontOfSize:12];
+    
+    
+    //滚动速率
+    _musicTitle.rate = 12;
+    _musicSubtitle.rate = 10;
+    
+    //滚动类型
+    
+    _musicTitle.marqueeType = MLContinuous;
+    _musicSubtitle.marqueeType = MLContinuous;
+    
+    
     // Do any additional setup after loading the view from its nib.
     _doubanPlayer = [PlayerViewController sharedController];
     _streamer = _doubanPlayer.streamer;
