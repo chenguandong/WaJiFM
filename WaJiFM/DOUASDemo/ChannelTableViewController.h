@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *headDownloadButton;
 @property (weak, nonatomic) IBOutlet UIButton *headLoveButton;
 @property (weak, nonatomic) IBOutlet MarqueeLabel *headTitle;
-
+#pragma mark 
 @property (weak, nonatomic) IBOutlet UIImageView *headImg;
     @property(nonatomic,strong)MusicMenuBean *albumInfo;
 @end

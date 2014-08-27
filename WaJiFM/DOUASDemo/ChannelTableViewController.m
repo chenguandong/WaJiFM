@@ -43,6 +43,8 @@
    
     
 }
+
+#pragma mark 收藏专辑
 - (IBAction)albumLove:(id)sender {
     
     //检查数据库是都创建
@@ -191,6 +193,8 @@
     return cell;
 }
 
+
+#pragma mark 收藏音乐
 -(void)addFavoutite:(id)sender{
 
 
@@ -257,10 +261,6 @@
         });
         
     }
-    
-    
-    
-
 
 }
 

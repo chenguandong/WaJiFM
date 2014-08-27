@@ -14,6 +14,7 @@
 const static NSString *DOWNLOAD_DB_NAME = @"download.db";
 const static NSString *FAVOURITE_DB_NAME = @"favourite.db";
 const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
+const static NSString *HISTORY_DB_NAME = @"history.db";
 @implementation SqlTools
 
 +(void)getFMdatabase:(NSString*)sql :(FMDatabase*)fmDataBase{
@@ -52,7 +53,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
  */
 +(FMDatabase*)getFavouriteDBPath{
     NSString *_docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *_dbPath = [_docPath stringByAppendingPathComponent:@"favourite.db"];
+    NSString *_dbPath = [_docPath stringByAppendingPathComponent:FAVOURITE_DB_NAME];
     return  [FMDatabase databaseWithPath:_dbPath];
 }
 
@@ -61,7 +62,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
  */
 +(FMDatabase*)getHistoryDBPath{
     NSString *_docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *_dbPath = [_docPath stringByAppendingPathComponent:@"history.db"];
+    NSString *_dbPath = [_docPath stringByAppendingPathComponent:HISTORY_DB_NAME];
     return  [FMDatabase databaseWithPath:_dbPath];
 }
 
@@ -70,7 +71,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
  */
 +(FMDatabase*)getAlbumFavouriteDBPath{
     NSString *_docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *_dbPath = [_docPath stringByAppendingPathComponent:@"favourite_album.db"];
+    NSString *_dbPath = [_docPath stringByAppendingPathComponent:FAVOURITE_ALBUM_DB_NAME];
     return  [FMDatabase databaseWithPath:_dbPath];
 }
 
@@ -152,7 +153,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
 }
 
 
-
+#pragma mark 查询收藏数据
 +(NSArray*)queryFavouriteDB:(NSString*)sql{
 
     NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
@@ -192,6 +193,49 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
     return array;
 
 
+}
+
+
+#pragma mark 查询收藏数据
++(NSArray*)queryHistoryDB:(NSString*)sql{
+    
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
+    
+    
+    FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:[self getdbPath:HISTORY_DB_NAME]];
+    
+    [queue inDatabase:^(FMDatabase *db) {
+        
+        
+        FMResultSet *rs = [db executeQuery:sql];//desc asc
+        while ([rs next]) {
+            
+            XMLBrodCastItem *noteBean = [[XMLBrodCastItem alloc] init];
+            noteBean.ID = [rs intForColumnIndex:0];
+            noteBean.title = [rs stringForColumnIndex:1];
+            noteBean.author = [rs stringForColumnIndex:2];
+            noteBean.subtitle = [rs stringForColumnIndex:3];
+            noteBean.summary = [rs stringForColumnIndex:4];
+            noteBean.image =[rs stringForColumnIndex:5];
+            noteBean.guid = [rs stringForColumnIndex:6];
+            noteBean.pubDate = [rs stringForColumnIndex:7];
+            noteBean.duration = [rs stringForColumnIndex:8];
+            noteBean.keywords = [rs stringForColumnIndex:9];
+            noteBean.download_type = [rs intForColumnIndex:10];
+            noteBean.download_file_name = [rs stringForColumnIndex:11];
+            noteBean.album  =[rs stringForColumnIndex:12];
+            noteBean.file_type = [rs intForColumnIndex:13];
+            noteBean.isfavourite  = [rs intForColumnIndex:14];
+            [array addObject:noteBean];
+        }
+        [db close];
+    }];
+    
+    
+    NSLog(@"count=%d",array.count);
+    return array;
+    
+    
 }
 
 
@@ -285,7 +329,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
 
 #pragma mark  插入数据到收历史记录
 +(BOOL)insertHistoryDate:(XMLBrodCastItem *)xmlBrodCastItem{
-    FMDatabase * db = [self getFavouriteDBPath];
+    FMDatabase * db = [self getHistoryDBPath];
     
     BOOL res = NO;
     if ([db open]) {
@@ -299,7 +343,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
                xmlBrodCastItem.download_file_name,
                xmlBrodCastItem.album,
                [NSString stringWithFormat:@"%d",xmlBrodCastItem.file_type],
-               [NSString stringWithFormat:@"%d",0]
+               [NSString stringWithFormat:@"%d",xmlBrodCastItem.isfavourite]
                ];
         
         if (!res) {
@@ -317,7 +361,7 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
 
 
 
-
+#pragma mark  插入下载数据
 +(BOOL)insertDownloadDate:(XMLBrodCastItem *)xmlBrodCastItem{
 
     FMDatabase * db = [self getDownloadDBPath];
@@ -450,6 +494,8 @@ const static NSString *FAVOURITE_ALBUM_DB_NAME=@"favourite_album.db";
     }];
     return ishava;
 }
+
+
 
 
 /**

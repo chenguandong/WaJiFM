@@ -30,7 +30,7 @@
 //下载完毕后文件名称
 @property (nonatomic,copy)NSString *download_file_name;
 
-//所属转接名称
+//所属专辑名称
 @property(nonatomic,copy)NSString *album;
 
 //文件类型  1, voice 2, voideo

@@ -10,5 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HistoryTableViewController : UITableViewController
-
+@property(nonatomic,strong) NSMutableArray * allDownLoadData;
+@property(nonatomic,copy)NSString *querySql;
 @end

@@ -101,6 +101,11 @@
 		D4F5B29A18A605AB0063865C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F5B29918A605AB0063865C /* MediaPlayer.framework */; };
 		DA8CB0DE19AB424300968D7A /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */; };
 		DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */; };
+		DAAAB4B919AD8AEB00288B09 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */; };
+		DAAAB4BB19AD8B3E00288B09 /* Icon-smail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */; };
+		DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BC19AD8B6400288B09 /* Icon.png */; };
+		DAAAB4BF19AD8B8A00288B09 /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */; };
+		DAAAB4CA19ADEE9000288B09 /* HistoryiewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAAB4C919ADEE9000288B09 /* HistoryiewController.m */; };
 		DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E165196BCEBD00569B1B /* mplaceholder.png */; };
 		DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */; };
 		DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */; };
@@ -121,10 +126,6 @@
 		DAC2E227196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E212196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m */; };
 		DAC2E228196BDBBA00569B1B /* DOUSimpleHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E214196BDBBA00569B1B /* DOUSimpleHTTPRequest.m */; };
 		DAC2E229196BDBBA00569B1B /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E216196BDBBA00569B1B /* NSData+DOUMappedFile.m */; };
-		DAC2E22B196BDC9500569B1B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22A196BDC9500569B1B /* Icon@2x.png */; };
-		DAC2E22D196BDCC800569B1B /* Icon-smail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */; };
-		DAC2E22F196BDCF800569B1B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E22E196BDCF800569B1B /* Icon.png */; };
-		DAC2E231196BDD1400569B1B /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E230196BDD1400569B1B /* Icon-smail.png */; };
 		DAC2E235196BEA1D00569B1B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -270,6 +271,12 @@
 		DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
 		DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
 		DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewController.xib; sourceTree = "<group>"; };
+		DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail@2x.png"; sourceTree = "<group>"; };
+		DAAAB4BC19AD8B6400288B09 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail.png"; sourceTree = "<group>"; };
+		DAAAB4C819ADEE9000288B09 /* HistoryiewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryiewController.h; sourceTree = "<group>"; };
+		DAAAB4C919ADEE9000288B09 /* HistoryiewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryiewController.m; sourceTree = "<group>"; };
 		DAC2E165196BCEBD00569B1B /* mplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mplaceholder.png; sourceTree = "<group>"; };
 		DAC2E1ED196BDBBA00569B1B /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		DAC2E1EE196BDBBA00569B1B /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
@@ -313,10 +320,6 @@
 		DAC2E214196BDBBA00569B1B /* DOUSimpleHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUSimpleHTTPRequest.m; sourceTree = "<group>"; };
 		DAC2E215196BDBBA00569B1B /* NSData+DOUMappedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DOUMappedFile.h"; sourceTree = "<group>"; };
 		DAC2E216196BDBBA00569B1B /* NSData+DOUMappedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DOUMappedFile.m"; sourceTree = "<group>"; };
-		DAC2E22A196BDC9500569B1B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail@2x.png"; sourceTree = "<group>"; };
-		DAC2E22E196BDCF800569B1B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		DAC2E230196BDD1400569B1B /* Icon-smail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail.png"; sourceTree = "<group>"; };
 		DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -605,10 +608,10 @@
 		D4C38929171B9D87009D6124 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAC2E22C196BDCC800569B1B /* Icon-smail@2x.png */,
-				DAC2E230196BDD1400569B1B /* Icon-smail.png */,
-				DAC2E22A196BDC9500569B1B /* Icon@2x.png */,
-				DAC2E22E196BDCF800569B1B /* Icon.png */,
+				DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */,
+				DAAAB4BC19AD8B6400288B09 /* Icon.png */,
+				DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */,
+				DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */,
 				D4C3892A171B9D87009D6124 /* 哇唧FM-Info.plist */,
 				D4C3892B171B9D87009D6124 /* InfoPlist.strings */,
 				D4C3892E171B9D87009D6124 /* main.m */,
@@ -623,6 +626,8 @@
 		DA94C7F019AB40E100B2FDB3 /* historyColl */ = {
 			isa = PBXGroup;
 			children = (
+				DAAAB4C819ADEE9000288B09 /* HistoryiewController.h */,
+				DAAAB4C919ADEE9000288B09 /* HistoryiewController.m */,
 				DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */,
 				DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */,
 				DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */,
@@ -742,20 +747,22 @@
 				188A0764194D73F5005BC00F /* FavouriteAlbumTableViewController.xib in Resources */,
 				DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */,
 				18EDEF881949A75B00DF1B34 /* default_album_sml.jpg in Resources */,
+				DAAAB4B919AD8AEB00288B09 /* Icon@2x.png in Resources */,
 				18CFB98F194AA0CB00ADC133 /* SettingTableViewCell.xib in Resources */,
 				18EDEF861949929B00DF1B34 /* play_btn_prev.png in Resources */,
+				DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */,
 				18EDEF8A1949B1C800DF1B34 /* default_album_mid.jpg in Resources */,
-				DAC2E22F196BDCF800569B1B /* Icon.png in Resources */,
+				DAAAB4BF19AD8B8A00288B09 /* Icon-smail.png in Resources */,
 				18CFB9A8194AF10D00ADC133 /* ic_player_fav_selected_highlight.png in Resources */,
 				18CFB999194AEAAE00ADC133 /* RSS.png in Resources */,
 				1856B27A1946A1BA0013CDB2 /* DownLoadViewController.xib in Resources */,
-				DAC2E22B196BDC9500569B1B /* Icon@2x.png in Resources */,
 				18EDEF851949929B00DF1B34 /* play_btn_prev_prs.png in Resources */,
 				18CFB9A0194AF04E00ADC133 /* download.png in Resources */,
 				18F978C619430B97006900E1 /* DownloadTableViewController.xib in Resources */,
 				18EDEF7B194991DD00DF1B34 /* play_ctrl_pause_prs.png in Resources */,
 				D4C38935171B9D87009D6124 /* Default.png in Resources */,
 				18C701331947FFC200A14D4F /* MusicPlayViewController.xib in Resources */,
+				DAAAB4BB19AD8B3E00288B09 /* Icon-smail@2x.png in Resources */,
 				188A0758194D3832005BC00F /* FavouriteViewController.xib in Resources */,
 				D4C38937171B9D87009D6124 /* Default@2x.png in Resources */,
 				18F978BF1942BF25006900E1 /* Localizable.strings in Resources */,
@@ -767,14 +774,12 @@
 				18EDEF831949929B00DF1B34 /* play_btn_next_prs.png in Resources */,
 				188A075A194D61CC005BC00F /* like_enabled.png in Resources */,
 				18CFB9A7194AF10D00ADC133 /* ic_player_fav_disable.png in Resources */,
-				DAC2E231196BDD1400569B1B /* Icon-smail.png in Resources */,
 				18CFB98A194A9A8600ADC133 /* SettingMenuViewController.xib in Resources */,
 				18EDEF7E194991DD00DF1B34 /* play_ctrl_play.png in Resources */,
 				DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */,
 				18EDEF841949929B00DF1B34 /* play_btn_next.png in Resources */,
 				181B9745193D80E100CEDE91 /* MusicTableViewMenuController.xib in Resources */,
 				18394C7B19471B320091A3B3 /* DownLoadedViewController.xib in Resources */,
-				DAC2E22D196BDCC800569B1B /* Icon-smail@2x.png in Resources */,
 				D4C38939171B9D87009D6124 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,6 +872,7 @@
 				DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */,
 				DAC2E223196BDBBA00569B1B /* DOUAudioStreamer+Options.m in Sources */,
 				18B21455193EC50B00BD9CBE /* ChannelTableViewController.m in Sources */,
+				DAAAB4CA19ADEE9000288B09 /* HistoryiewController.m in Sources */,
 				1856B2831946F6090013CDB2 /* StringTools.m in Sources */,
 				181B977A193D950600CEDE91 /* HttpTools.m in Sources */,
 				D4F5B29318A5F3030063865C /* MainViewController.m in Sources */,

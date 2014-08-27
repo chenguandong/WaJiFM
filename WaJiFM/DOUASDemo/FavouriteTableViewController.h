@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "XMLBrodCastItem.h"
 @interface FavouriteTableViewController : UITableViewController
-@property(nonatomic,strong) NSMutableArray * allDownLoadData;
+@property(nonatomic,strong) NSMutableArray * allData;
 @property(nonatomic,copy)NSString *querySql;
+
+
+//删除收藏
+-(BOOL)delectFavourite:(NSString*)title;
+//检查是否已经收藏
+-(BOOL)checkFavourite:(NSString*)title;
+//插入收藏
+-(BOOL)insertFavourite:(XMLBrodCastItem*)favouriteBean;
+
+-(void)setSqlQuery:(NSString*)querySql;
 @end

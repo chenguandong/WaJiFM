@@ -38,6 +38,15 @@
  */
 +(NSArray*)queryFavouriteDB:(NSString*)sql;
 
+/*!
+ *  查询历史记录
+ *
+ *  @param sql sql语句
+ *
+ *  @return 查询历史记录
+ */
++(NSArray*)queryHistoryDB:(NSString*)sql;
+
 /**
     创建 dowoload db sql
  */

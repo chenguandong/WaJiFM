@@ -11,6 +11,8 @@
 #import "SettingBean.h"
 #import "DownLoadViewController.h"
 #import "FavouriteViewController.h"
+#import "HistoryTableViewController.h"
+#import "HistoryiewController.h"
 @interface SettingMenuViewController ()
 
 @end
@@ -71,6 +73,12 @@
     [self.navigationController pushViewController:downLoadColl animated:YES];
 }
 
+#pragma mark 跳转到历史记录
+-(void)jumpHistory{
+    HistoryiewController *historyColl = [HistoryiewController new];
+    [self.navigationController pushViewController:historyColl animated:YES];
+}
+
 -(void)jumpFavourite{
     FavouriteViewController *faouriteColl = [FavouriteViewController new];
     [self.navigationController pushViewController:faouriteColl animated:YES];
@@ -128,6 +136,9 @@
             break;
         case 1:
             [self jumpFavourite];
+            break;
+        case 2:
+            [self jumpHistory];
             break;
         default:
             break;
