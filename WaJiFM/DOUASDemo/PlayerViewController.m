@@ -24,6 +24,7 @@
 #import "SDWebImage/UIButton+WebCache.h"
 #import "MarqueeLabel.h"
 #import "SqlTools.h"
+#import "UIImageView+LBBlurredImage.h"
 static void *kStatusKVOKey = &kStatusKVOKey;
 static void *kDurationKVOKey = &kDurationKVOKey;
 static void *kBufferingRatioKVOKey = &kBufferingRatioKVOKey;
@@ -151,7 +152,15 @@ static PlayerViewController *sharedRootController = nil;
         _musicColl.musicTitle.text =track.title;
         _musicColl.musicSubtitle.text = track.subTitle;
         [_musicColl.musicImg setImageWithURL:[NSURL URLWithString:track.audioImg] placeholderImage:[UIImage imageNamed:@"default_album_sml"]];
-         [_audioImgView setImageWithURL:[NSURL URLWithString:track.audioImg] placeholderImage:[UIImage imageNamed:@"default_album_mid"]];
+        
+        _audioImgView.hidden = YES;
+        
+        [_audioImgView setImageWithURL:[NSURL URLWithString:track.audioImg] placeholderImage:[UIImage imageNamed:@"default_album_mid"]];
+        
+        
+        [_audioImgView setImageToBlur:_audioImgView.image blurRadius:0.1 completionBlock:^{
+            _audioImgView.hidden = NO;
+        }];
         
         [self _updateBufferingStatus];
         [self _setupHintForStreamer];
@@ -208,17 +217,11 @@ static PlayerViewController *sharedRootController = nil;
       
       
       [_musicColl.musicProgress setProgress:[_streamer currentTime] / [_streamer duration] animated:NO];
-//      dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^{
-//          // time-consuming task
-//          dispatch_async(dispatch_get_main_queue(),^{
-//              //外部进度条
-//              
-//      })
-//    ;});
-      
-      //_musicColl.title=
+
       
   }
+    
+
 }
 
 - (void)_updateStatus
@@ -414,5 +417,7 @@ static PlayerViewController *sharedRootController = nil;
         }
     }
 }
+
+
 
 @end

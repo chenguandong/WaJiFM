@@ -27,7 +27,7 @@
 #import "XMLBrodCastItem.h"
 #import "DownloadTableViewController.h"
 #import "MainViewController.h"
-
+#import "BaseUINavigationController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -54,6 +54,10 @@
 
   return YES;
 }
+
+
+
+
 -(void)testDownload{
     NSMutableArray *arra = [NSMutableArray new];
 
@@ -81,7 +85,7 @@
     
      _mainViewController = [MainViewController new];
     
-    UINavigationController *mainNavigationController = [[UINavigationController alloc] initWithRootViewController:_mainViewController];
+    BaseUINavigationController *mainNavigationController = [[BaseUINavigationController alloc] initWithRootViewController:_mainViewController];
  
     
    _musicMenuColl = [[MusicTableViewMenuController alloc]init];
@@ -142,6 +146,14 @@
 - (void)download:(TCBlobDownloader *)blobDownload didStopWithError:(NSError *)error
 {
     
+}
+
+
+
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskAll;
 }
 
 

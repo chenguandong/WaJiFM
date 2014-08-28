@@ -32,7 +32,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.moviePlayer.scalingMode = MPMovieScalingModeAspectFit;
 }
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

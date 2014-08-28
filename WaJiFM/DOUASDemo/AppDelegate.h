@@ -24,6 +24,7 @@
 #import "PlayerViewController.h"
 #import "DownloadTableViewController.h"
 #import "MainViewController.h"
+
 @class MainViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate,TCBlobDownloaderDelegate>
 

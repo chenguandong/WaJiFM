@@ -107,6 +107,7 @@
 		DAAAB4BF19AD8B8A00288B09 /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */; };
 		DAAEE68B19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */; };
 		DAAEE68C19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */; };
+		DAAEE69419AF302500D315F9 /* BaseUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAEE69319AF302500D315F9 /* BaseUINavigationController.m */; };
 		DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E165196BCEBD00569B1B /* mplaceholder.png */; };
 		DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */; };
 		DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */; };
@@ -279,6 +280,8 @@
 		DAAEE68819AEFDDA00D315F9 /* MyMPMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMPMoviePlayerViewController.h; sourceTree = "<group>"; };
 		DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMPMoviePlayerViewController.m; sourceTree = "<group>"; };
 		DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMPMoviePlayerViewController.xib; sourceTree = "<group>"; };
+		DAAEE69219AF302500D315F9 /* BaseUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUINavigationController.h; sourceTree = "<group>"; };
+		DAAEE69319AF302500D315F9 /* BaseUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUINavigationController.m; sourceTree = "<group>"; };
 		DAC2E165196BCEBD00569B1B /* mplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mplaceholder.png; sourceTree = "<group>"; };
 		DAC2E1ED196BDBBA00569B1B /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		DAC2E1EE196BDBBA00569B1B /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
@@ -585,6 +588,8 @@
 		D4C38928171B9D87009D6124 /* WaJiFM */ = {
 			isa = PBXGroup;
 			children = (
+				DAAEE69119AF300300D315F9 /* common */,
+				DAAEE68D19AF2D2A00D315F9 /* category */,
 				18B21459193ECD9700BD9CBE /* IMG */,
 				18C7012E1947FF2200A14D4F /* view */,
 				185EE3441945974F006EB1CD /* cell */,
@@ -644,6 +649,22 @@
 				DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */,
 			);
 			name = mediapPlayerColl;
+			sourceTree = "<group>";
+		};
+		DAAEE68D19AF2D2A00D315F9 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		DAAEE69119AF300300D315F9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				DAAEE69219AF302500D315F9 /* BaseUINavigationController.h */,
+				DAAEE69319AF302500D315F9 /* BaseUINavigationController.m */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 		DAC2E1EC196BDBA200569B1B /* BD_FM */ = {
@@ -874,6 +895,7 @@
 				18CFB99D194AEEA700ADC133 /* MusicCell.m in Sources */,
 				181B977B193D950600CEDE91 /* JsonTools.m in Sources */,
 				18F978FF19432710006900E1 /* NoteBean.m in Sources */,
+				DAAEE69419AF302500D315F9 /* BaseUINavigationController.m in Sources */,
 				DAC2E228196BDBBA00569B1B /* DOUSimpleHTTPRequest.m in Sources */,
 				185EE34D1945AF36006EB1CD /* DownLoadTableViewCell.m in Sources */,
 				DAC2E222196BDBBA00569B1B /* DOUAudioStreamer.m in Sources */,
