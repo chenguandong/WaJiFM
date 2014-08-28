@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-LBBlurredImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MarqueeLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A214025F6D743AEA4E99D67</key>
+		<key>128E992F8E914C65994E3882</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2930176B43BE44A7983CFC4B</key>
+		<key>1CE84277EC294ECB98344608</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>562EE3EE019E43A99C724093</key>
+		<key>77206EDBCB8E4C7EB0A78C29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>585FA12B6BC0432985B209F5</key>
+		<key>7CA16E839DBF49928A1A653D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80B6C0F8EC364EDABD97F97D</key>
+		<key>8DBDE2E438674698ACBC4FB8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC4A0E8C6DAD41DEB6A3DEBB</key>
+		<key>B4087C6362E24791A394FDEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA26A6AD664A4426AAFAB2EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -243,14 +243,14 @@
 		D42DA80F17865EE4007276E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D42DA81117865EE9007276E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D4632A6E17AE27E30065ECDE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		D4C3891F171B9D87009D6124 /* 哇唧FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "哇唧FM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C3891F171B9D87009D6124 /* WJFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C38922171B9D87009D6124 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D4C38924171B9D87009D6124 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4C38926171B9D87009D6124 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D4C3892A171B9D87009D6124 /* 哇唧FM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "哇唧FM-Info.plist"; sourceTree = "<group>"; };
+		D4C3892A171B9D87009D6124 /* WJFM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WJFM-Info.plist"; sourceTree = "<group>"; };
 		D4C3892C171B9D87009D6124 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4C3892E171B9D87009D6124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4C38930171B9D87009D6124 /* 哇唧FM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "哇唧FM-Prefix.pch"; sourceTree = "<group>"; };
+		D4C38930171B9D87009D6124 /* WJFM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WJFM-Prefix.pch"; sourceTree = "<group>"; };
 		D4C38931171B9D87009D6124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4C38932171B9D87009D6124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4C38934171B9D87009D6124 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -380,10 +380,10 @@
 				18CFB988194A9A8600ADC133 /* SettingMenuViewController.xib */,
 				188A0754194D3832005BC00F /* FavouriteViewController.h */,
 				188A0755194D3832005BC00F /* FavouriteViewController.m */,
+				188A0756194D3832005BC00F /* FavouriteViewController.xib */,
 				188A0760194D73F5005BC00F /* FavouriteAlbumTableViewController.h */,
 				188A0761194D73F5005BC00F /* FavouriteAlbumTableViewController.m */,
 				188A0762194D73F5005BC00F /* FavouriteAlbumTableViewController.xib */,
-				188A0756194D3832005BC00F /* FavouriteViewController.xib */,
 			);
 			name = coll;
 			sourceTree = "<group>";
@@ -554,7 +554,7 @@
 		D4C38920171B9D87009D6124 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4C3891F171B9D87009D6124 /* 哇唧FM.app */,
+				D4C3891F171B9D87009D6124 /* WJFM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -615,10 +615,10 @@
 				DAAAB4BC19AD8B6400288B09 /* Icon.png */,
 				DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */,
 				DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */,
-				D4C3892A171B9D87009D6124 /* 哇唧FM-Info.plist */,
+				D4C3892A171B9D87009D6124 /* WJFM-Info.plist */,
 				D4C3892B171B9D87009D6124 /* InfoPlist.strings */,
 				D4C3892E171B9D87009D6124 /* main.m */,
-				D4C38930171B9D87009D6124 /* 哇唧FM-Prefix.pch */,
+				D4C38930171B9D87009D6124 /* WJFM-Prefix.pch */,
 				D4C38934171B9D87009D6124 /* Default.png */,
 				D4C38936171B9D87009D6124 /* Default@2x.png */,
 				D4C38938171B9D87009D6124 /* Default-568h@2x.png */,
@@ -698,9 +698,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4C3891E171B9D87009D6124 /* 哇唧FM */ = {
+		D4C3891E171B9D87009D6124 /* WJFM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4C38942171B9D87009D6124 /* Build configuration list for PBXNativeTarget "哇唧FM" */;
+			buildConfigurationList = D4C38942171B9D87009D6124 /* Build configuration list for PBXNativeTarget "WJFM" */;
 			buildPhases = (
 				0EEC725AA1FD45498B439C99 /* Check Pods Manifest.lock */,
 				D4C3891B171B9D87009D6124 /* Sources */,
@@ -712,9 +712,9 @@
 			);
 			dependencies = (
 			);
-			name = "哇唧FM";
+			name = WJFM;
 			productName = DOUASDemo;
-			productReference = D4C3891F171B9D87009D6124 /* 哇唧FM.app */;
+			productReference = D4C3891F171B9D87009D6124 /* WJFM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -726,7 +726,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Douban Inc.";
 			};
-			buildConfigurationList = D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "哇唧FM" */;
+			buildConfigurationList = D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "WJFM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -739,7 +739,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4C3891E171B9D87009D6124 /* 哇唧FM */,
+				D4C3891E171B9D87009D6124 /* WJFM */,
 			);
 		};
 /* End PBXProject section */
@@ -994,16 +994,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DOUASDemo/哇唧FM-Prefix.pch";
+				GCC_PREFIX_HEADER = "DOUASDemo/WJFM-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				INFOPLIST_FILE = "DOUASDemo/哇唧FM-Info.plist";
+				INFOPLIST_FILE = "DOUASDemo/WJFM-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "哇唧FM";
+				PRODUCT_NAME = WJFM;
 				SDKROOT = iphoneos7.1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1017,16 +1017,16 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DOUASDemo/哇唧FM-Prefix.pch";
+				GCC_PREFIX_HEADER = "DOUASDemo/WJFM-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				INFOPLIST_FILE = "DOUASDemo/哇唧FM-Info.plist";
+				INFOPLIST_FILE = "DOUASDemo/WJFM-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "哇唧FM";
+				PRODUCT_NAME = WJFM;
 				SDKROOT = iphoneos7.1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1036,7 +1036,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "哇唧FM" */ = {
+		D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "WJFM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4C38940171B9D87009D6124 /* Debug */,
@@ -1045,7 +1045,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4C38942171B9D87009D6124 /* Build configuration list for PBXNativeTarget "哇唧FM" */ = {
+		D4C38942171B9D87009D6124 /* Build configuration list for PBXNativeTarget "WJFM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4C38943171B9D87009D6124 /* Debug */,

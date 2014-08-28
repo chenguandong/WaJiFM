@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4C3891E171B9D87009D6124"
                BuildableName = "&#x54c7;&#x5527;FM.app"
-               BlueprintName = "&#x54c7;&#x5527;FM"
-               ReferencedContainer = "container:&#x54c7;&#x5527;FM.xcodeproj">
+               BlueprintName = "WJFM"
+               ReferencedContainer = "container:WJFM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C3891E171B9D87009D6124"
             BuildableName = "&#x54c7;&#x5527;FM.app"
-            BlueprintName = "&#x54c7;&#x5527;FM"
-            ReferencedContainer = "container:&#x54c7;&#x5527;FM.xcodeproj">
+            BlueprintName = "WJFM"
+            ReferencedContainer = "container:WJFM.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C3891E171B9D87009D6124"
             BuildableName = "&#x54c7;&#x5527;FM.app"
-            BlueprintName = "&#x54c7;&#x5527;FM"
-            ReferencedContainer = "container:&#x54c7;&#x5527;FM.xcodeproj">
+            BlueprintName = "WJFM"
+            ReferencedContainer = "container:WJFM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C3891E171B9D87009D6124"
             BuildableName = "&#x54c7;&#x5527;FM.app"
-            BlueprintName = "&#x54c7;&#x5527;FM"
-            ReferencedContainer = "container:&#x54c7;&#x5527;FM.xcodeproj">
+            BlueprintName = "WJFM"
+            ReferencedContainer = "container:WJFM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

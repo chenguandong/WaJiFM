@@ -10,8 +10,6 @@ NSString *const kMarqueeLabelControllerRestartNotification = @"MarqueeLabelViewC
 NSString *const kMarqueeLabelShouldLabelizeNotification = @"MarqueeLabelShouldLabelizeNotification";
 NSString *const kMarqueeLabelShouldAnimateNotification = @"MarqueeLabelShouldAnimateNotification";
 
-typedef void (^animationCompletionBlock)(void);
-
 // Helpers
 @interface UIView (MarqueeLabelHelpers)
 - (UIViewController *)firstAvailableViewController;
@@ -154,19 +152,22 @@ CGPoint MLOffsetCGPoint(CGPoint point, CGFloat offset);
 - (void)forwardPropertiesToSubLabel {
     // Since we're a UILabel, we actually do implement all of UILabel's properties.
     // We don't care about these values, we just want to forward them on to our sublabel.
-    NSArray *properties = @[@"baselineAdjustment", @"enabled", @"font",
-                            @"highlighted", @"highlightedTextColor", @"minimumFontSize",
-                            @"shadowColor", @"shadowOffset", @"textAlignment", @"textColor",
+    NSArray *properties = @[@"baselineAdjustment", @"enabled", @"highlighted", @"highlightedTextColor",
+                            @"minimumFontSize", @"shadowOffset", @"textAlignment",
                             @"userInteractionEnabled", @"text", @"adjustsFontSizeToFitWidth",
-                            @"lineBreakMode", @"numberOfLines", @"backgroundColor"];
+                            @"lineBreakMode", @"numberOfLines"];
+    
     // Iterate through properties
+    self.subLabel.font = super.font;
+    self.subLabel.textColor = super.textColor;
+    self.subLabel.backgroundColor = super.backgroundColor;
+    self.subLabel.shadowColor = super.shadowColor;
     for (NSString *property in properties) {
         id val = [super valueForKey:property];
         [self.subLabel setValue:val forKey:property];
     }
     
-    // Grab attributed text from super, and clear to prevent double-drawing
-    self.attributedText = super.attributedText;
+    // Clear super to prevent double-drawing
     super.attributedText = nil;
 }
 
@@ -207,9 +208,7 @@ CGPoint MLOffsetCGPoint(CGPoint point, CGFloat offset);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(observedViewControllerChange:) name:@"UINavigationControllerDidShowViewControllerNotification" object:nil];
     
     // UIApplication state notifications
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartLabel) name:UIApplicationWillEnterForegroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(restartLabel) name:UIApplicationDidBecomeActiveNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shutdownLabel) name:UIApplicationWillResignActiveNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shutdownLabel) name:UIApplicationDidEnterBackgroundNotification object:nil];
     
     // Device Orientation change handling
@@ -513,7 +512,13 @@ CGPoint MLOffsetCGPoint(CGPoint point, CGFloat offset);
     if (!viewController.isViewLoaded) {
         return NO;
     }
-    
+    // Check if application is in active state
+    // Prevents CATransaction completionBlock (which does not receive a "finished" parameter
+    // like UIView animations) from looping when the application has been backgrounded
+    if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
+        return NO;
+    }
+
     return YES;
 }
 
@@ -968,14 +973,14 @@ CGPoint MLOffsetCGPoint(CGPoint point, CGFloat offset);
         // Unpause sublabel position animations
         NSArray *labels = [self allSubLabels];
         for (UILabel *sl in labels) {
-            CFTimeInterval labelPausedTime = [sl.layer timeOffset];
+            CFTimeInterval labelPausedTime = sl.layer.timeOffset;
             sl.layer.speed = 1.0;
             sl.layer.timeOffset = 0.0;
             sl.layer.beginTime = 0.0;
-            sl.layer.beginTime = [sl.layer convertTime:CACurrentMediaTime() fromLayer:nil] - labelPausedTime;;
+            sl.layer.beginTime = [sl.layer convertTime:CACurrentMediaTime() fromLayer:nil] - labelPausedTime;
         }
         // Unpause gradient fade animation
-        CFTimeInterval gradientPauseTime = [self.layer.mask timeOffset];
+        CFTimeInterval gradientPauseTime = self.layer.mask.timeOffset;
         self.layer.mask.speed = 1.0;
         self.layer.mask.timeOffset = 0.0;
         self.layer.mask.beginTime = 0.0;

@@ -66,11 +66,17 @@
 #define COCOAPODS_VERSION_MINOR_FMDB_standard 3
 #define COCOAPODS_VERSION_PATCH_FMDB_standard 0
 
+// LBBlurredImage
+#define COCOAPODS_POD_AVAILABLE_LBBlurredImage
+#define COCOAPODS_VERSION_MAJOR_LBBlurredImage 0
+#define COCOAPODS_VERSION_MINOR_LBBlurredImage 2
+#define COCOAPODS_VERSION_PATCH_LBBlurredImage 0
+
 // MarqueeLabel
 #define COCOAPODS_POD_AVAILABLE_MarqueeLabel
 #define COCOAPODS_VERSION_MAJOR_MarqueeLabel 2
 #define COCOAPODS_VERSION_MINOR_MarqueeLabel 0
-#define COCOAPODS_VERSION_PATCH_MarqueeLabel 2
+#define COCOAPODS_VERSION_PATCH_MarqueeLabel 4
 
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage

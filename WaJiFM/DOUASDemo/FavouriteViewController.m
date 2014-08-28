@@ -58,6 +58,7 @@
     [[self pageView] addSubview:[self.pageController view]];
     
     [self.pageController didMoveToParentViewController:self];
+   
     
 
     
