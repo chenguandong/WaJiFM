@@ -8,7 +8,6 @@
 
 #import "MusicPlayViewController.h"
 #import "PlayerViewController.h"
-
 #import "MarqueeLabel.h"
 @interface MusicPlayViewController ()
 
@@ -56,12 +55,20 @@ static MusicPlayViewController *sharedRootController = nil;
     [super viewDidLoad];
     
 
+//    MarqueeLabel *scrollyLabelTitle = [[MarqueeLabel alloc] initWithFrame:_musicTitle.frame rate:12.0 andFadeLength:10.0f];
+//    scrollyLabelTitle.textColor = [UIColor orangeColor];
+//    scrollyLabelTitle.font = [UIFont systemFontOfSize:17];
+//    _musicTitle = scrollyLabelTitle;
+//    [self.view addSubview:scrollyLabelTitle];
+    
     
     //设置音乐标题和字体样式
     _musicSubtitle.textColor = [UIColor whiteColor];
     _musicTitle.textColor = [UIColor whiteColor];
     _musicSubtitle.font  =[UIFont systemFontOfSize:12];
-    
+
+    _musicTitle.backgroundColor = [UIColor clearColor];
+    _musicSubtitle.backgroundColor = [UIColor clearColor];
     
     //滚动速率
     _musicTitle.rate = 12;

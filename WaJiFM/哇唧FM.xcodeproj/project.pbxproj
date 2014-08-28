@@ -105,7 +105,8 @@
 		DAAAB4BB19AD8B3E00288B09 /* Icon-smail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */; };
 		DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BC19AD8B6400288B09 /* Icon.png */; };
 		DAAAB4BF19AD8B8A00288B09 /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */; };
-		DAAAB4CA19ADEE9000288B09 /* HistoryiewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAAB4C919ADEE9000288B09 /* HistoryiewController.m */; };
+		DAAEE68B19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */; };
+		DAAEE68C19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */; };
 		DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E165196BCEBD00569B1B /* mplaceholder.png */; };
 		DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */; };
 		DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */; };
@@ -275,8 +276,9 @@
 		DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail@2x.png"; sourceTree = "<group>"; };
 		DAAAB4BC19AD8B6400288B09 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail.png"; sourceTree = "<group>"; };
-		DAAAB4C819ADEE9000288B09 /* HistoryiewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryiewController.h; sourceTree = "<group>"; };
-		DAAAB4C919ADEE9000288B09 /* HistoryiewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryiewController.m; sourceTree = "<group>"; };
+		DAAEE68819AEFDDA00D315F9 /* MyMPMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMPMoviePlayerViewController.h; sourceTree = "<group>"; };
+		DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMPMoviePlayerViewController.m; sourceTree = "<group>"; };
+		DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMPMoviePlayerViewController.xib; sourceTree = "<group>"; };
 		DAC2E165196BCEBD00569B1B /* mplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mplaceholder.png; sourceTree = "<group>"; };
 		DAC2E1ED196BDBBA00569B1B /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		DAC2E1EE196BDBBA00569B1B /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
@@ -328,10 +330,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F5B29A18A605AB0063865C /* MediaPlayer.framework in Frameworks */,
 				18F978D819431466006900E1 /* libsqlite3.dylib in Frameworks */,
 				181B976E193D935100CEDE91 /* SystemConfiguration.framework in Frameworks */,
 				183984F319371DBD00B43B24 /* libxml2.dylib in Frameworks */,
-				D4F5B29A18A605AB0063865C /* MediaPlayer.framework in Frameworks */,
 				D4F5B29818A605A70063865C /* AVFoundation.framework in Frameworks */,
 				D4632A6F17AE27E30065ECDE /* MobileCoreServices.framework in Frameworks */,
 				D42DA81217865EE9007276E5 /* OpenGLES.framework in Frameworks */,
@@ -353,6 +355,7 @@
 		181B9740193D80AB00CEDE91 /* coll */ = {
 			isa = PBXGroup;
 			children = (
+				DAAEE68719AEFD9900D315F9 /* mediapPlayerColl */,
 				DA94C7F019AB40E100B2FDB3 /* historyColl */,
 				181B9741193D80E100CEDE91 /* MusicTableViewMenuController.h */,
 				181B9742193D80E100CEDE91 /* MusicTableViewMenuController.m */,
@@ -626,13 +629,21 @@
 		DA94C7F019AB40E100B2FDB3 /* historyColl */ = {
 			isa = PBXGroup;
 			children = (
-				DAAAB4C819ADEE9000288B09 /* HistoryiewController.h */,
-				DAAAB4C919ADEE9000288B09 /* HistoryiewController.m */,
 				DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */,
 				DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */,
 				DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */,
 			);
 			name = historyColl;
+			sourceTree = "<group>";
+		};
+		DAAEE68719AEFD9900D315F9 /* mediapPlayerColl */ = {
+			isa = PBXGroup;
+			children = (
+				DAAEE68819AEFDDA00D315F9 /* MyMPMoviePlayerViewController.h */,
+				DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */,
+				DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */,
+			);
+			name = mediapPlayerColl;
 			sourceTree = "<group>";
 		};
 		DAC2E1EC196BDBA200569B1B /* BD_FM */ = {
@@ -749,6 +760,7 @@
 				18EDEF881949A75B00DF1B34 /* default_album_sml.jpg in Resources */,
 				DAAAB4B919AD8AEB00288B09 /* Icon@2x.png in Resources */,
 				18CFB98F194AA0CB00ADC133 /* SettingTableViewCell.xib in Resources */,
+				DAAEE68C19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib in Resources */,
 				18EDEF861949929B00DF1B34 /* play_btn_prev.png in Resources */,
 				DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */,
 				18EDEF8A1949B1C800DF1B34 /* default_album_mid.jpg in Resources */,
@@ -870,9 +882,9 @@
 				183984F7193720CB00B43B24 /* XMLBrodCast.m in Sources */,
 				183984EF1937181500B43B24 /* GDataXMLNode.m in Sources */,
 				DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */,
+				DAAEE68B19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m in Sources */,
 				DAC2E223196BDBBA00569B1B /* DOUAudioStreamer+Options.m in Sources */,
 				18B21455193EC50B00BD9CBE /* ChannelTableViewController.m in Sources */,
-				DAAAB4CA19ADEE9000288B09 /* HistoryiewController.m in Sources */,
 				1856B2831946F6090013CDB2 /* StringTools.m in Sources */,
 				181B977A193D950600CEDE91 /* HttpTools.m in Sources */,
 				D4F5B29318A5F3030063865C /* MainViewController.m in Sources */,

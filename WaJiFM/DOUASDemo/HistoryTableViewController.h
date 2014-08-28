@@ -8,8 +8,9 @@
 //  播放的历史记录
 
 #import <UIKit/UIKit.h>
-
-@interface HistoryTableViewController : UITableViewController
-@property(nonatomic,strong) NSMutableArray * allDownLoadData;
+#import "FavouriteTableViewController.h"
+@interface HistoryTableViewController :UITableViewController
+@property(nonatomic,strong) NSMutableArray * historyAllData;
 @property(nonatomic,copy)NSString *querySql;
+
 @end

@@ -15,6 +15,9 @@
 @property(nonatomic,copy)NSString * subtitle;
 @property(nonatomic,copy)NSString * summary;
 @property(nonatomic,copy)NSString * image;
+/*!
+ *  播放地址
+ */
 @property(nonatomic,copy)NSString * guid;
 @property(nonatomic,copy)NSString * pubDate;
 @property(nonatomic,copy)NSString * duration;

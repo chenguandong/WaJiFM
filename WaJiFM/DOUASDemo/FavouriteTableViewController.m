@@ -44,7 +44,6 @@
 }
 -(void)startQueryData{
     
-    
      [SVProgressHUD showWithStatus:@"数据加载中..."];
     
     NSLog(@"======%@",_querySql);

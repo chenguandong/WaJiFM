@@ -12,7 +12,7 @@
 #import "DownLoadViewController.h"
 #import "FavouriteViewController.h"
 #import "HistoryTableViewController.h"
-#import "HistoryiewController.h"
+#import "HistoryTableViewController.h"
 @interface SettingMenuViewController ()
 
 @end
@@ -75,7 +75,8 @@
 
 #pragma mark 跳转到历史记录
 -(void)jumpHistory{
-    HistoryiewController *historyColl = [HistoryiewController new];
+    HistoryTableViewController *historyColl = [HistoryTableViewController new];
+    
     [self.navigationController pushViewController:historyColl animated:YES];
 }
 

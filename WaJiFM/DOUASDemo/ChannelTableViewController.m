@@ -20,6 +20,9 @@
 #import "StringTools.h"
 #import "MusicCell.h"
 #import "SqlTools.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "MyMPMoviePlayerViewController.h"
+
 #define kDownloadPath [NSString pathWithComponents:@[NSTemporaryDirectory(), @"multipleExample"]]
 @interface ChannelTableViewController ()
 
@@ -39,6 +42,7 @@
     [self loadDate];
     [self initHeadView];
     self.tableView.rowHeight = 100;
+    
     
    
     
@@ -108,6 +112,7 @@
 -(void)initHeadView{
     [self.headImg  setImageWithURL:[NSURL URLWithString:_albumInfo.image] placeholderImage:[UIImage imageNamed:@"placeholder"]];
     self.headTitle.text  = _albumInfo.title;
+    self.headTitle.backgroundColor = [UIColor clearColor];
     self.title =_albumInfo.title;
 
 }
@@ -313,30 +318,51 @@
     
     //    [playerViewController setTitle:@"Local Music Library ♫"];
     //    [playerViewController setTracks:[Track musicLibraryTracks]];
-    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
- 
-    [appDelegate.playerColl setTitle:@"Remote Music ♫"];
     
-    NSMutableArray *arr = [NSMutableArray new];
-    for ( XMLBrodCastItem *musicBean in _channelArray) {
-        Track *track = [[Track alloc]init];
-        track.artist = musicBean.author;
-        track.title = musicBean.title;
-        track.audioFileURL =[NSURL URLWithString:musicBean.guid];
-        track.audioImg = musicBean.image;
-        track.subTitle = musicBean.subtitle;
-        [arr addObject:track];
+    XMLBrodCastItem *tempBean =_channelArray[indexPath.row];
+
+    NSLog(@"fileTypr=%d",tempBean.file_type);
+    
+    if ([StringTools getFileType:tempBean.guid]==1) {
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
         
+        [appDelegate.playerColl setTitle:@"Remote Music ♫"];
+        
+        NSMutableArray *arr = [NSMutableArray new];
+        for ( XMLBrodCastItem *musicBean in _channelArray) {
+            Track *track = [[Track alloc]init];
+            track.artist = musicBean.author;
+            track.title = musicBean.title;
+            track.audioFileURL =[NSURL URLWithString:musicBean.guid];
+            track.audioImg = musicBean.image;
+            track.subTitle = musicBean.subtitle;
+            [arr addObject:track];
+            
+        }
+        
+        [appDelegate.playerColl setTracks:arr];
+        
+        appDelegate.playerColl.currentTrackIndex = (NSUInteger)indexPath.row;
+        
+        appDelegate.playerColl.musicDetail =_channelArray;
+        
+        [[self navigationController] pushViewController:appDelegate.playerColl
+                                               animated:YES];
+    }else{
+        NSLog(@"------%@",tempBean.guid);
+
+        //[NSURL URLWithString:tempBean.guid]
+        
+        
+        
+        MyMPMoviePlayerViewController *movieColl = [[MyMPMoviePlayerViewController alloc]initWithContentURL:[NSURL URLWithString:tempBean.guid]];
+        movieColl.moviePlayer.allowsAirPlay = YES;
+
+        [self presentMoviePlayerViewControllerAnimated:movieColl];
+        
+       
+
     }
-    
-    [appDelegate.playerColl setTracks:arr];
-    
-    appDelegate.playerColl.currentTrackIndex = (NSUInteger)indexPath.row;
-    
-    appDelegate.playerColl.musicDetail =_channelArray;
-    
-    [[self navigationController] pushViewController:appDelegate.playerColl
-                                           animated:YES];
     
 }
 
