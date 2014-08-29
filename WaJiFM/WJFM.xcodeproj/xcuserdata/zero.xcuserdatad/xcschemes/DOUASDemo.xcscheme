@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4C3891E171B9D87009D6124"
-               BuildableName = "&#x54c7;&#x5527;FM.app"
+               BuildableName = "WJFM.app"
                BlueprintName = "WJFM"
                ReferencedContainer = "container:WJFM.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C3891E171B9D87009D6124"
-            BuildableName = "&#x54c7;&#x5527;FM.app"
+            BuildableName = "WJFM.app"
             BlueprintName = "WJFM"
             ReferencedContainer = "container:WJFM.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C3891E171B9D87009D6124"
-            BuildableName = "&#x54c7;&#x5527;FM.app"
+            BuildableName = "WJFM.app"
             BlueprintName = "WJFM"
             ReferencedContainer = "container:WJFM.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C3891E171B9D87009D6124"
-            BuildableName = "&#x54c7;&#x5527;FM.app"
+            BuildableName = "WJFM.app"
             BlueprintName = "WJFM"
             ReferencedContainer = "container:WJFM.xcodeproj">
          </BuildableReference>

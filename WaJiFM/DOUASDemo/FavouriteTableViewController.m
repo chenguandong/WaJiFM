@@ -34,6 +34,12 @@
     
     [self startQueryData];
     self.tableView.rowHeight =100;
+    
+    
+    //去除多余分割线
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [self.tableView setTableFooterView:view];
 }
 
 
@@ -260,7 +266,7 @@
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
  }
  }
- 
+
 
 /*
  // Override to support rearranging the table view.
